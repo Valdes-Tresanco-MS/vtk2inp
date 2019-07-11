@@ -102,7 +102,7 @@ for data in cell_data:
                       ('%s,' % (int(data[2]) + 1)).rjust(8) + ('%s,' % (int(data[3]) + 1)).rjust(8) + ('%s,' % (int(data[4]) + 1)).rjust(8) +
                       ('%s,' % (int(data[5]) + 1)).rjust(8) + ('%s,' % (int(data[6]) + 1)).rjust(8) + ('%s' % (int(data[7]) + 1)).rjust(8) + '\n')
     ndat += 1
-
+# this is the standard configuration of a program ??
 output_file.write('*ELSET, ELSET=OUT_CONT, GENERATE\n1,%s,1 \n' % len(cell_data) +
                   '*SOLID SECTION, ELSET=P1, MATERIAL=M1\n** NX Nastran for FEMAP Property 2 : P3\n' +
                   '*ORIENTATION, NAME=S0, DEFINITION=COORDINATES, SYSTEM=RECTANGULAR\n' +
