@@ -12,3 +12,9 @@ nav:
     - 'api.md'
     - 'about.md'
 theme: readthedocs
+
+markdown_extensions:
+  - admonition
+  - footnotes
+
+copyright: MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.
