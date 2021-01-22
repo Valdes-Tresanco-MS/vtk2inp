@@ -29,20 +29,20 @@ to the structure`*`. If `assign_chainID = 2`, `gmx_MMPBSA` re-assign the chains 
 structure`*` (can generate inconsistencies). If a `*.gro` file was used for complex structure
 (`-cs` flag) and not reference structure was provided, `gmx_MMPBSA` assume `assign_chainID = 1`. (Default = 0)
 
-```tip
-`*` _The chain ID is assigned according to two criteria: **terminal amino acids** and **residue numbering**. If
-both criteria or residue numbering changes are present, we assign a new chain ID. If there are terminal amino acids but
-the numbering of the residue continues, we do not change the ID of the chain._
-```
+!!! Tip
+    `*` _The chain ID is assigned according to two criteria: **terminal amino acids** and **residue numbering**. If
+    both criteria or residue numbering changes are present, we assign a new chain ID. If there are terminal amino acids but
+    the numbering of the residue continues, we do not change the ID of the chain._
+
 
 `debug_printlevel` MMPBSA.py prints errors by raising exceptions, and not catching fatal errors. If debug_printlevel is
 set to 0, then detailed tracebacks (effectively the call stack showing exactly where in the program the error occurred)
 is suppressed, so only the error message is printed. If debug_printlevel is set to 1 or higher, all tracebacks are
 printed, which aids in debugging of issues. (Default = 0) (Advanced Option)
 
-```tip
-_Now `gmx_MMPBSA` shows the command-line used to build AMBER topologies when `debug_printlevel = 1 or higher`._ 
-```
+!!! Tip
+    _Now `gmx_MMPBSA` shows the command-line used to build AMBER topologies when `debug_printlevel = 1 or higher`._ 
+
 
 `startframe` The frame from which to begin extracting snapshots from the full, concatenated trajectory comprised of
 every trajectory file placed on the command-line. This is always the first frame read. (Default = 1)
