@@ -12,8 +12,8 @@ nav:
     - 'advanced.md'
     - 'api.md'
     - 'about.md'
-    - 'support/information.md'
-    - 'support/release.md'
+    - 'Support/information.md'
+    - 'Support/release.md'
 theme: readthedocs
 
 markdown_extensions:
