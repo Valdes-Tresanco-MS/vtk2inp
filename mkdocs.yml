@@ -1,4 +1,5 @@
 site_name: gmx_MMPBSA
+repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
 nav:
     - 'index.md'
     - 'introduction.md'
@@ -17,4 +18,4 @@ markdown_extensions:
   - admonition
   - footnotes
 
-copyright: MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.
+copyright: ©  MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.
