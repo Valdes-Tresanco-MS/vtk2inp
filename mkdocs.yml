@@ -1,5 +1,14 @@
 site_name: gmx_MMPBSA
 nav:
-    - Home: index.md
-    - About: about.md
+    - 'index.md'
+    - 'introduction.md'
+    - 'summary.md'
+    - 'versus.md'
+    - 'installation.md'
+    - 'command-line.md'
+    - 'input_file.md'
+    - 'output.md'
+    - 'advanced.md'
+    - 'api.md'
+    - 'about.md'
 theme: readthedocs
