@@ -1,0 +1,5 @@
+site_name: gmx_MMPBSA
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
