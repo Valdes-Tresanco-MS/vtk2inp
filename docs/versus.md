@@ -1,3 +1,7 @@
+---
+sort: 3
+---
+
 # Comparison of `gmx_MMPBSA` vs other programs
 This comparison is based on the documentation of the different programs
 
@@ -5,22 +9,22 @@ This comparison is based on the documentation of the different programs
 |:---|:---:|:---:|:---:|:---:|
 | **Normal binding free energies**| PB | PB | PB and GB | PB and GB |
 | GB models |  |  | 1, 2, 3, 5, 7 and 8  | 1, 2, 3, 5, 7 and 8 |
-| **Stability** |  | | :heavy_check_mark: | :heavy_check_mark: |
-| **Alanine scanning** | :heavy_check_mark: <sup>2</sup> | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| **Stability** |  | | ✔️  | ✔️  |
+| **Alanine scanning** | ✔️  <sup>2</sup> | ✔️  | ✔️  | ✔️  |
 | **Entropy corrections** <sup>3</sup>|  |  | nmode and qh | nmode, qh, and IE |
 | **Decomposition schemes** | Per-Residues | | Per-Residues and Per-Wise | Per-Residues and Per-Wise |
-| **QM/MMGBSA** |   | | :heavy_check_mark: | :heavy_check_mark: |
-| **MM/3D-RISM** |   | | :heavy_check_mark: | :heavy_check_mark: |
-| **Membrane Protein MMPBSA** |   |   | :heavy_check_mark: | :heavy_check_mark: |
+| **QM/MMGBSA** |   | | ✔️  | ✔️  |
+| **MM/3D-RISM** |   | | ✔️  | ✔️  |
+| **Membrane Protein MMPBSA** |   |   | ✔️  | ✔️  |
 | **GROMACS Version** | 4.x, 5.x and 2016+ <sup>4</sup> | 4.x, 5.x and 20xx.x <sup>5</sup> | --- | 4.x, 5.x and 20xx.x |
 | **Approximations** | ST | ST | ST and MT | ST and MT |
-| **API** |     | | :heavy_check_mark: | :heavy_check_mark: |
-| **Graphical Analyzer** |   | |  | :heavy_check_mark: |
-| Energy to PDB | :heavy_check_mark: |   |  | :heavy_check_mark: |
+| **API** |     | | ✔️  | ✔️  |
+| **Graphical Analyzer** |   | |  | ✔️  |
+| Energy to PDB | ✔️  |   |  | ✔️  |
 | Energetic Terms charts | Per-Frame | Per-Frame | Average (dat file) / Average and Per-Frame (API) <sup>6</sup>  | Average and Per-frame |
 | Energetic Terms charts representation | xmgrace/ matplotlib/ gnuplot | xmgrace/ matplotlib/ gnuplot | API and graphics library | gmx_MMPBSA_gui |
 | **Externals programs** | APBS (1.2.x, 1.3.x or 1.4.x) | APBS (1.x.x) <sup>7</sup> |  AmberTools20 | AmberTools20 |
-| **Parallel computation** | Depends on APBS version | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| **Parallel computation** | Depends on APBS version | ✔️  | ✔️  | ✔️  |
 | **Steps for:** | | | | |
 | Calculation and Summary | Multiple | Multiple | One | One |
 | Analysis| Multiple | Multiple | Multiple | One |
