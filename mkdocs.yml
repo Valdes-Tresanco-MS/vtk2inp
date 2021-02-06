@@ -1,7 +1,7 @@
-site_name: dammit
-site_url: http://dib-lab.github.io/dammit
-repo_name: dammit
-repo_url: https://github.com/dib-lab/dammit
+site_name: gmx_MMPBSA Documentation
+site_url: http://valdes-tresanco-ms.github.io/gmx_MMPBSA
+repo_name: gmx_MMPBSA
+repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
 edit_uri: ""
 
 #extra_css: css/custom.css
