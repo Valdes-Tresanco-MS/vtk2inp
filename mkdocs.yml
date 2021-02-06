@@ -5,7 +5,7 @@ mkdocs:
 site_name: gmx_MMPBSA
 repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
 nav:
-    - 'index.md'
+    - Home: 'index.md'
     - Documentation:
         - 'Documentation/introduction.md'
         - 'Documentation/summary.md'
