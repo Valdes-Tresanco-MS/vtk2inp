@@ -1,11 +1,6 @@
 site_name: gmx_MMPBSA
 theme:
-  name: null
-  custom_dir: mkdocs-material/material
-
-  # 404 page
-  static_templates:
-    - 404.html
+  name: material
 
   # Necessary for search to work properly
   include_search_page: false
