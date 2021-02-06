@@ -1,16 +1,34 @@
 site_name: gmx_MMPBSA
+repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
+nav:
+    - Home: 'index.md'
+    - Documentation:
+        - Introduction: 'Documentation/introduction.md'
+        - Summary: 'Documentation/summary.md'
+        - gmx_MMPBSA vs other programs: 'Documentation/versus.md'
+        - Installation: 'Documentation/installation.md'
+        - Command-line: 'Documentation/command-line.md'
+        - The input file: 'Documentation/input_file.md'
+        - The Output file: 'Documentation/output.md'
+        - Advanced: 'Documentation/advanced.md'
+        - Python API: 'Documentation/api.md'
+    - Examples:
+        - Examples: 'Examples/example.md'
+    - Support:
+        - Information: 'Support/information.md'
+        - History: 'Support/release.md'
+    - About: 'about.md'
 theme:
-  name: material
+    name: material
+#    navigation_depth: 4
 
-  # Necessary for search to work properly
-  include_search_page: false
-  search_index_only: true
+markdown_extensions:
+  - admonition
+  - footnotes
+#  - toc:
+#       toc_depth: '3'
 
-  # Default values, taken from mkdocs_theme.yml
-  language: en
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
+#extra_css:
+#  - 'extra.css'
+
+copyright: ©  MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.
