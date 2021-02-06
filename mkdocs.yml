@@ -1,3 +1,7 @@
+version: 2
+mkdocs:
+  configuration: mkdocs.yml
+
 site_name: gmx_MMPBSA
 repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
 nav:
@@ -28,6 +32,7 @@ markdown_extensions:
   - toc:
        toc_depth: '3'
 
-extra_css: [extra.css]
+extra_css:
+  - 'extra.css'
 
 copyright: ©  MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.
