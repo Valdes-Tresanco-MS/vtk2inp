@@ -18,11 +18,6 @@ theme:
 #  name: null
 #  custom_dir: 'mkdocs-material-dib/material'
 
-  # pretty colors! see https://squidfunk.github.io/mkdocs-material/getting-started/#primary-colors
-  palette:
-    primary: 'green'
-    accent: 'purple'
-  
   # fun logos! see https://material.io/icons/
   icon:
     logo: material/dns
