@@ -1,5 +1,0 @@
-# Alanine scanning
-
-asddasd
-
-## adasdasd
