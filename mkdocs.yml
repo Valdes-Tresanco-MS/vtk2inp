@@ -10,7 +10,7 @@ copyright: 'Copyright &copy; 2020 <a href="http://ivory.idyll.org/lab/">Lab for 
 
 # change directory names here
 
-site_dir: site
+#site_dir: site
 
 theme:
   name: material
