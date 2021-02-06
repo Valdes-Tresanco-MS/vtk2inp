@@ -20,6 +20,7 @@ nav:
     - 'about.md'
 theme:
     name: readthedocs
+    navigation_depth: 4
 
 markdown_extensions:
   - admonition
