@@ -15,7 +15,8 @@ nav:
     - 'Support/information.md'
     - 'Support/release.md'
 theme: readthedocs
-
+    features:
+        - navigation.sections
 markdown_extensions:
   - admonition
   - footnotes
