@@ -2,22 +2,31 @@ site_name: gmx_MMPBSA
 repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
 nav:
     - 'index.md'
-    - 'introduction.md'
-    - 'summary.md'
-    - 'versus.md'
-    - 'installation.md'
-    - 'command-line.md'
-    - 'input_file.md'
-    - 'output.md'
-    - 'advanced.md'
-    - 'api.md'
+    - Documentation:
+        - 'Documentation/introduction.md'
+        - 'Documentation/summary.md'
+        - 'Documentation/versus.md'
+        - 'Documentation/installation.md'
+        - 'Documentation/command-line.md'
+        - 'Documentation/input_file.md'
+        - 'Documentation/output.md'
+        - 'Documentation/advanced.md'
+        - 'Documentation/api.md'
+    - Examples:
+        - 'Examples/example.md'
+    - Support:
+        - 'Support/information.md'
+        - 'Support/release.md'
     - 'about.md'
-    - 'Support/information.md'
-    - 'Support/release.md'
-theme: readthedocs
+theme:
+    name: readthedocs
 
 markdown_extensions:
   - admonition
   - footnotes
+  - toc:
+       toc_depth: '3'
+
+extra_css: [extra.css]
 
 copyright: ©  MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.

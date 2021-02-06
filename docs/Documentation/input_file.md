@@ -29,7 +29,7 @@ to the structure`*`. If `assign_chainID = 2`, `gmx_MMPBSA` re-assign the chains 
 structure`*` (can generate inconsistencies). If a `*.gro` file was used for complex structure
 (`-cs` flag) and not reference structure was provided, `gmx_MMPBSA` assume `assign_chainID = 1`. (Default = 0)
 
-!!! Tip
+!!! Tip "Make sure:"
     `*` _The chain ID is assigned according to two criteria: **terminal amino acids** and **residue numbering**. If
     both criteria or residue numbering changes are present, we assign a new chain ID. If there are terminal amino acids but
     the numbering of the residue continues, we do not change the ID of the chain._
