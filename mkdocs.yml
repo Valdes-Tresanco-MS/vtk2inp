@@ -23,14 +23,14 @@ nav:
         - 'Support/release.md'
     - 'about.md'
 theme:
-    name: readthedocs
+    name: material
     navigation_depth: 4
 
 markdown_extensions:
   - admonition
   - footnotes
-  - toc:
-       toc_depth: '3'
+#  - toc:
+#       toc_depth: '3'
 
 extra_css:
   - 'extra.css'
