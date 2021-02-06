@@ -1,38 +1,23 @@
-version: 2
-mkdocs:
-  configuration: mkdocs.yml
-
-site_name: gmx_MMPBSA
-repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
-nav:
-    - Home: 'index.md'
-    - Documentation:
-        - 'Documentation/introduction.md'
-        - 'Documentation/summary.md'
-        - 'Documentation/versus.md'
-        - 'Documentation/installation.md'
-        - 'Documentation/command-line.md'
-        - 'Documentation/input_file.md'
-        - 'Documentation/output.md'
-        - 'Documentation/advanced.md'
-        - 'Documentation/api.md'
-    - Examples:
-        - 'Examples/example.md'
-    - Support:
-        - 'Support/information.md'
-        - 'Support/release.md'
-    - 'about.md'
 theme:
-    name: material
-    navigation_depth: 4
+  name: null
+  custom_dir: mkdocs-material/material
 
-markdown_extensions:
-  - admonition
-  - footnotes
-#  - toc:
-#       toc_depth: '3'
+  # 404 page
+  static_templates:
+    - 404.html
 
-extra_css:
-  - 'extra.css'
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+
 
 copyright: ©  MS. and ME Valdes Tresanco, 2020-2021. This work is licensed under GPLv3.
