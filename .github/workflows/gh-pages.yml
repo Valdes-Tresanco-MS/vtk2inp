@@ -1,4 +1,4 @@
-ame: build and deploy mkdocs to github pages
+name: build and deploy mkdocs to github pages
 
 on:
   push:
