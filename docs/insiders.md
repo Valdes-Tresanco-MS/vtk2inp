@@ -1,5 +1,5 @@
 ---
-template: overrides/main.html
+template: main.html
 ---
 
 # <span hidden>Insiders</span> :logo: :material-plus: :octicons-heart-fill-24:{: .tx-heart }
