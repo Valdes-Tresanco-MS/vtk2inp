@@ -26,9 +26,13 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
   
-  features:
-    - instant
+#  features:
+#    - instant
 #    - tabs
+  features:
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
 
 
 markdown_extensions:
