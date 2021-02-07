@@ -19,20 +19,29 @@ theme:
 #  custom_dir: 'mkdocs-material-dib/material'
 
   # fun logos! see https://material.io/icons/
-  icon:
-    logo: material/dns
+  static_templates:
+    - 404.html
 
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-  
-#  features:
-#    - instant
-#    - tabs
-  features:
-    # - navigation.instant
-    - navigation.sections
-    - navigation.tabs
+    # Don't include MkDocs' JavaScript
+    include_search_page: false
+    search_index_only: true
+
+    # Default values, taken from mkdocs_theme.yml
+    language: en
+    features:
+      # - navigation.instant
+      - navigation.sections
+      - navigation.tabs
+    palette:
+      scheme: default
+      primary: indigo
+      accent: indigo
+    font:
+      text: Roboto
+      code: Roboto Mono
+    favicon: assets/favicon.png
+    icon:
+      logo: logo
 
 
 markdown_extensions:
