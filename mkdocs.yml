@@ -1,24 +1,46 @@
-site_name: gmx_MMPBSA Documentation
-site_url: http://valdes-tresanco-ms.github.io/gmx_MMPBSA
-repo_name: gmx_MMPBSA
-repo_url: https://github.com/Valdes-Tresanco-MS/gmx_MMPBSA
+# Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: Material for MkDocs
+site_url: https://squidfunk.github.io/mkdocs-material/
+site_author: Martin Donath
+site_description: >-
+  Create a branded static site from a set of Markdown files to host the
+  documentation of your Open Source or commercial project – customizable,
+  searchable, mobile-friendly, 40+ languages
+
+# Repository
+repo_name: squidfunk/mkdocs-material
+repo_url: https://github.com/squidfunk/mkdocs-material
 edit_uri: ""
 
-#extra_css: css/custom.css
+# Copyright
+copyright: Copyright &copy; 2016 - 2021 Martin Donath
 
-copyright: 'Copyright &copy; 2020 <a href="http://ivory.idyll.org/lab/">Lab for Data Intensive Biology</a> at UC Davis'
-
-# change directory names here
-
-#site_dir: site
-
+# Configuration
 theme:
-  name: material
-  # the next 2 lines are required to use the DIB version
-#  name: null
-  custom_dir: theme
+  name: null
+  custom_dir: material
 
-  # fun logos! see https://material.io/icons/
+  # 404 page
   static_templates:
     - 404.html
 
@@ -43,7 +65,44 @@ theme:
   icon:
     logo: logo
 
+# Plugins
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        extensions/admonition.md: reference/admonitions.md
+        extensions/codehilite.md: reference/code-blocks.md
+        extensions/footnotes.md: reference/footnotes.md
+        extensions/metadata.md: reference/meta-tags.md
+        extensions/permalinks.md: setup/setting-up-navigation.md #permalink
+        extensions/pymdown.md: reference/admonitions.md
+        plugins/revision-date.md: setup/adding-a-git-repository.md #revision-date
+        plugins/search.md: setup/setting-up-site-search.md
+        releases/4.md: upgrading.md #upgrading-from-4x-to-5x
+        releases/5.md: upgrading.md #upgrading-from-3x-to-4x
+        releases/changelog.md: changelog.md
+        setup/adding-social-links.md: setup/setting-up-the-footer.md
+        sponsorship.md: insiders.md
+  - minify:
+      minify_html: true
 
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/squidfunk
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/squidfunk/mkdocs-material
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/squidfunk/
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/squidfunk
+
+# Extensions
 markdown_extensions:
   - admonition
   - abbr
@@ -83,21 +142,55 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# this will add docs/css/custom.css to all your docs
-#extra_css:
-#  - css/custom.css
-
-# give a title for each page
+# Page tree
 nav:
   - Home: index.md
-  - Installation:
-    - Requirements: system_requirements.md
-    - Bioconda: install.md
-  - Databases:
-    - Basic Usage: database-usage.md
-    - About the Databases: database-about.md
-    - Advanced Database Handling: database-advanced.md
-  - Tutorial: tutorial.md
-  - For developers:
-    - Notes for developers: dev_notes.md
-  - About: about.md
+  - Getting started:
+    - Installation: getting-started.md
+    - Creating your site: creating-your-site.md
+    - Publishing your site: publishing-your-site.md
+    - Customization: customization.md
+    - Troubleshooting: troubleshooting.md
+    - Data privacy: data-privacy.md
+    - Insiders: insiders.md
+    - License: license.md
+  - Setup:
+    - Changing the colors: setup/changing-the-colors.md
+    - Changing the fonts: setup/changing-the-fonts.md
+    - Changing the language: setup/changing-the-language.md
+    - Changing the logo and icons: setup/changing-the-logo-and-icons.md
+    - Setting up navigation: setup/setting-up-navigation.md
+    - Setting up site search: setup/setting-up-site-search.md
+    - Setting up site analytics: setup/setting-up-site-analytics.md
+    - Setting up versioning: setup/setting-up-versioning.md
+    - Setting up the header: setup/setting-up-the-header.md
+    - Setting up the footer: setup/setting-up-the-footer.md
+    - Adding a git repository: setup/adding-a-git-repository.md
+    - Adding a comment system: setup/adding-a-comment-system.md
+  - Reference:
+    - Abbreviations: reference/abbreviations.md
+    - Admonitions: reference/admonitions.md
+    - Buttons: reference/buttons.md
+    - Code blocks: reference/code-blocks.md
+    - Content tabs: reference/content-tabs.md
+    - Data tables: reference/data-tables.md
+    - Diagrams: reference/diagrams.md
+    - Footnotes: reference/footnotes.md
+    - Formatting: reference/formatting.md
+    - Icons + Emojis: reference/icons-emojis.md
+    - Images: reference/images.md
+    - Lists: reference/lists.md
+    - MathJax: reference/mathjax.md
+    - Meta tags: reference/meta-tags.md
+    - Variables: reference/variables.md
+  - Changelog:
+    - Material for MkDocs: changelog.md
+    - Material for MkDocs Insiders: changelog/insiders.md
+    - Guides:
+      - Upgrading: upgrading.md
+      - Deprecations: deprecations.md
+
+# Google Analytics
+google_analytics:
+  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
+  - auto

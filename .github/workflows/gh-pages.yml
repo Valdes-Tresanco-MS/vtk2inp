@@ -1,43 +1,35 @@
-name: build and deploy mkdocs to github pages
-
+name: documentation
 on:
   push:
     branches:
       - master
 
+env:
+  PYTHON_VERSION: 3.x
+
 jobs:
-  deploy:
+  documentation:
+    name: Build documentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: "recursive"
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Python
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python runtime
         uses: actions/setup-python@v1
         with:
-          python-version: '3.7'
-          architecture: 'x64'
+          python-version: ${{ env.PYTHON_VERSION }}
 
-    #  - name: Cache dependencies
-    #    uses: actions/cache@v1
-    #    with:
-    #      path: ~/.cache/pip
-    #      key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-    #      restore-keys: |
-    #        ${{ runner.os }}-pip-
-
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install mkdocs
-          python3 -m pip install mkdocs-material
-      - name: Build site
-        run: mkdocs build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          pip install mkdocs-material
+          pip install \
+            mkdocs-minify-plugin>=0.3 \
+            mkdocs-redirects>=1.0
+      - name: Deploy documentation
+        env:
+          GOOGLE_ANALYTICS_KEY: ${{ secrets.GOOGLE_ANALYTICS_KEY }}
+        run: |
+          mkdocs gh-deploy --force
+          mkdocs --version

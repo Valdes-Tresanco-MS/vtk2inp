@@ -1,4 +1,4 @@
 ---
-template: theme/partials/home.html
-title: gmx_MMPBSA Documentation
+template: overrides/home.html
+title: Material for MkDocs
 ---
