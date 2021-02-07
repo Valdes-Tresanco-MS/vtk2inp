@@ -16,7 +16,7 @@ theme:
   name: material
   # the next 2 lines are required to use the DIB version
 #  name: null
-  custom_dir: docs/overrides
+  custom_dir: overrides
 
   # fun logos! see https://material.io/icons/
   static_templates:
