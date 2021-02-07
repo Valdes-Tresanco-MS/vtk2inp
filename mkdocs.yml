@@ -189,8 +189,3 @@ nav:
     - Guides:
       - Upgrading: upgrading.md
       - Deprecations: deprecations.md
-
-# Google Analytics
-google_analytics:
-  - !!python/object/apply:os.getenv ["GOOGLE_ANALYTICS_KEY"]
-  - auto
