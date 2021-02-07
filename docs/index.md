@@ -1,4 +1,4 @@
 ---
-template: docs/overrides/home.html
+template: overrides/home.html
 title: gmx_MMPBSA Documentation
 ---
