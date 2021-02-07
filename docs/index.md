@@ -1,4 +1,4 @@
 ---
-template: theme/home.html
+template: theme/partials/home.html
 title: gmx_MMPBSA Documentation
 ---
