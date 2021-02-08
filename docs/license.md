@@ -1,9 +1,0 @@
----
-template: main.html
----
-
-# License
-
-**MIT License**
-
---8<-- "LICENSE"
